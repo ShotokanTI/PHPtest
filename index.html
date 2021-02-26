@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .teste {
+            margin-top: 30vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container teste">
+        <div class="row form-group justify-content-center">
+            <div class="col-12 col-sm-4 align-self-center">
+                <h2 for="">Busca CEP
+                </h2>
+                <input id="input-cep" onkeypress="return isNumberKey(event)" type="text" class="form-control" name="cep">
+                <small id="helpId" class="form-text text-muted">Preencha este campo</small>
+            </div>
+        </div>
+    </div>
+    <script src="src/regras.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="src/exceptions.js"></script>
+    <script src="src/searchCep.js"></script>
+</body>
+
+</html>
