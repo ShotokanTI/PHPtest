@@ -1,25 +1,29 @@
-# PHPtest
+# Via-Cep App
 
-Teste de seleção para vaga PHP
+Solução pronta para o consumo.
 
-## Faça um fork desse projeto e siga as intruções a seguir utilizando esse projeto.
+## Requisitos.
 
 Construir uma aplicação web para buscar endereço. Aplicação deve fazer uma chamada na API via cep : https://viacep.com.br/.
 Premissas:
 
-  ● Usar PHP 5.6 ou superior.
+  ● Usar PHP 7.3
   
-  ● Usar Bootstrap.
-  
-  ● JavaScript (Não usar framework).
-  
-  ● Retorno deve ser em xml.
-  
-  ● Salvar os dados em uma base e antes de uma nova consulta verificar se o cep já foi consultado, caso tenha sido, trazer    informação da base e não deve efetuar uma nova consulta.
-  
-  ● Tratar o erro. Dar um retorno amigável para usuário leigo.
-  
-  
-## PS: Valorizamos a criatividade no layout.
+  ● Usar Mysql.
 
-Ao finalizar a programação publicar esse teste em seu github e nos encaminhar o link com as instruções de teste.
+## Inicialização
+
+1.Baixar as dependências
+
+$ npm install
+
+2.Rodar o banco mysql na porta padrão 3306
+
+3.executar a url http://localhost:8000/
+
+Obs:O banco e a tabela é criado automaticamente assim que rodar a aplicação.
+
+## Execução
+
+php -S localhost:8000
+

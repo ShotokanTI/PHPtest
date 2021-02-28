@@ -1,0 +1,23 @@
+.loading-cep {
+    width: 10rem !important;
+    height: 10rem !important;
+    color: chartreuse;
+    display: none !important;
+}
+
+.alert-cep {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+tr{
+    font-family: 'Roboto', sans-serif;
+}
+.toast-body{
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}

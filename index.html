@@ -5,33 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/index.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
         }
 
-        .teste {
+        .container-margin {
             margin-top: 30vh;
         }
     </style>
 </head>
 
 <body>
-    <div class="container teste">
+    <div class="container container-margin">
         <div class="row form-group justify-content-center">
-            <div class="col-12 col-sm-4 align-self-center">
+            <div id="content-cep" class="col-12 col-sm-4 align-self-center">
                 <h2 for="">Busca CEP
                 </h2>
-                <input id="input-cep" onkeypress="return isNumberKey(event)" type="text" class="form-control" name="cep">
+                <input data-mask="00000-000" id="input-cep"  type="text" class="form-control" name="cep">
                 <small id="helpId" class="form-text text-muted">Preencha este campo</small>
             </div>
+            <div id="l-cep" class="spinner-border loading-cep" role="status">
+            </div>
+            <div class="table-responsive">
+                <table class="table table-primary">
+                    <thead id="cep-title">
+                    </thead>
+                    <tbody id="cep-data">
+
+                    </tbody>
+                </table>
+              </div>
         </div>
     </div>
-    <script src="src/regras.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <div data-bs-animation="true" data-bs-delay="2000" class="alert-cep toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    <script src="src/js/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="src/exceptions.js"></script>
+    <script src="src/js/jquery.mask.js"></script>
     <script src="src/searchCep.js"></script>
 </body>
 
